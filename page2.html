@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- importation d'une police de google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<!-- importation de l'icon afficher sur l'onglet.(utisation du site favicon.io) -->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<title>fédération française d'aquaponey</title>
+</head>
+
+<body>
+
+	<header>
+		<div id="logo_titre">
+			<div id="titre_principal">
+				<h1>Fédération Française d'AquaPoney</h1>
+				<h2>FFAP - Toutes nos actualitées sportives & RDV</h2>
+			</div>
+				<div id="logo">
+					<img src="images/poney.jpeg" alt="poney muni d'un bonnet de bain de bain et de lunettes de piscine">
+				</div>
+			</div>
+
+			<nav>
+				<ul>
+					<!-- le bouton une fois cliquer renvoie sur le lien définis -->
+                   	<li><button onclick="window.location.href='page1.html';">Accueil</button></li> 
+                    <li><button onclick="window.location.href=href='https://www.scholingua.com/images/pages/fr/fr/conjugaison_trouver.png';">Trouver un club</button></li>
+                    <li><button onclick="window.location.href='https://www.coque-unique.com/clothes/calendrier-photo-je-peux-pas-jai-aqua-poney-girly-white.jpg';">Calendrier</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="bloc_page">
+        	<section id="page2">
+				<form method="post" action="https://www.nsi-premiere.fr"/form>
+					<p id="text_intro">
+						Pour nous contacter, uilisez ce formulaire.<br />
+						Nous vous répondrons dans les meilleurs délais.
+					</p>
+					
+					<fieldset>
+					    <p>
+					    	<label for="votre_nom"> Nom* :</label>
+					        <input type="text" name="votre_nom" id="votre_nom" placeholder="Dupont" size="30" maxlength="60" autofocus required /> <!-- Quand la page est chargée automatiquement le curseur est placé dans le champs : "nom" , ce champ doit obligatoirement être remplis -->
+					    </p>
+					    <p>
+					    	<label for="votre_prenom"> Prénom* :</label>
+					    	<input type="text" name="votre_prenom" id="votre_prenom" placeholder="Philippe" size="30" maxlength="60" required /> <!-- ce champ doit être obligatoirement remplis -->
+						</p>
+						<p>
+					        <label for="votre_mail">e-mail :</label>
+					        <input type="email" name="votre_mail" id="votre_mail" placeholder="poney@gmail.com" size="30" maxlength="60" />
+					    </p>
+					    <p>
+					    	<label for="num_tel">numéro de tel :</label>
+					        <input type ="tel" name="num_tel" id="num_tel" placeholder="02 02 02 02 02" size="30" maxlength="60" />
+						</p>
+						<p>
+							<label for="message">Message :</label><br />
+							<textarea name="message" id="message" rows="10" cols="60"></textarea>
+						</p>
+						<p id="champs">* champs obligatoires</p>
+						<button type="submit" id="soumettre">Envoyer</button>
+						 <!-- bouton permettant d'envoyer le formulaire -->
+					</fieldset>
+				</form>
+				
+			</section>
+
+			<footer>
+	    		<table>
+	    			<tr>
+	    				<td><a href="images/giphy.GIF" id="qui_sommes_nous">Qui sommes nous ?</a></td>
+	    				<td><a href="page2.html" id="contact">Contact</a></td>
+	    				<td><a href="https://www.youtube.com/watch?v=HbUoFvHotPc" target="_blank" id="lien_freestyle">Lien vers freestyle poney</a></td>
+	    			</tr>
+	    		</table>
+	    	</footer>
+	    </div>
+
+</body>	
+</html>
